@@ -1,3 +1,3 @@
-# meteor
+# Meteor App
 
-See this project in action here: https://omer1112.github.io/meteor/
+Checkout yourself. Link is in description
