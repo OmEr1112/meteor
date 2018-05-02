@@ -1,0 +1,147 @@
+.slideText-container .container {
+  width: 101.2rem;
+  margin: 0 auto;
+  @include clearfix;
+}
+
+
+// text
+.slideText {
+  position: relative;
+  width: 40rem;
+  float: left; 
+}
+
+.slideIcons {
+  position: absolute;
+  top: 3.3rem;
+  right: 0;
+  z-index: 400;
+  
+
+  .dots {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: rgba(black, .3);
+  }
+}
+
+.slideIcons span.selected-dot {
+  background-color: rgba(black, .6);
+  animation: show 500ms ease;
+}
+
+.imageText {
+  padding: 3rem 0;
+  width: 100%;
+  display: none;
+
+  & > h3 {
+    padding-bottom: 1rem;
+  
+    span {
+      color: rgba(7, 63, 114, 1);
+    }
+  }
+
+  p {
+    font-style: italic;
+    font-size: 1.4rem;
+  }
+}
+
+.active-text {
+  display: block;
+  animation: show1 500ms ease;
+}
+
+.active-textp {
+  display: block;
+  animation: show2 500ms ease;
+}
+
+@keyframes show {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes show1 {
+  from {opacity: 0; transform: translateX(12.8rem)}
+  to {opacity: 1; transform: translateX(0)}
+}
+
+@keyframes show2 {
+  from {opacity: 0; transform: translateX(-12.8rem)}
+  to {opacity: 1; transform: translateX(0)}
+}
+
+// text end
+
+.intro_imageSlide {
+  float: right;
+  width: 55%;
+  height: 50rem;
+  border: .2rem solid #293e6a;
+  position: relative;
+  overflow: hidden;
+}
+
+.slideImages {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform .5s ease;
+}
+
+// btn
+
+.imgbanbtn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -2rem;
+  z-index: 2500;
+
+  i {
+    border: solid #f7ca43;
+    border-width: 0 .7rem .7rem 0;
+    display: inline-block;
+    padding: 1.5rem;
+  }
+
+}
+
+.imgbanbtn:hover {
+  opacity: .9;
+}
+
+.imgbanbtn-prev {
+  // border-width: 30px 40px 30px 0;
+  // border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 1.4rem;
+
+  i {
+    transform: rotate(135deg);
+  }
+}
+
+
+.imgbanbtn-next {
+  // border-width: 30px 0 30px 40px;
+  // border-color: transparent transparent transparent #fff;
+ right: 0;
+ margin-right: 1.4rem;
+
+ i {
+  transform: rotate(-45deg);
+ }
+}
+
+
+
+

@@ -1,0 +1,52 @@
+.buy {
+  width: 101.2rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+
+  &_wrapper {
+    margin: 0 auto;
+  }
+
+  &_heading {
+    color: rgba(7, 63, 114, 1);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 400;
+  }
+
+  &_links {
+    margin-left: 21rem;
+  }
+
+  &_signup {
+    display: inline-block;
+    border: none;
+    margin-left: 2rem;
+    height: 4rem;
+    line-height: 4rem;
+    vertical-align: middle;
+    padding: 0 2rem;
+    font-size: 1.4rem;
+    border-radius: .4rem;
+    font-weight: 600;
+    color: #e9831e !important;
+    background-color: $primary-color;
+  }
+
+  &_free {
+    display: inline-block;
+    border: none;
+    margin-left: 2rem;
+    height: 4rem;
+    line-height: 4rem;
+    vertical-align: middle;
+    padding: 0 2rem;
+    border-radius: .4rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white !important;
+    background-color: #607a92;
+  }
+
+  
+}

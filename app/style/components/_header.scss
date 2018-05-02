@@ -1,0 +1,194 @@
+.nav {
+
+  width: 101.2rem;
+  margin: 0 auto;
+  height: 11rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: .1rem solid $nav-border;
+
+  a {
+    color: $text-color;
+    
+  }
+
+  &_logo {
+    margin-right: auto;
+    font-weight: 700;
+    display: block;
+    width: 31.9rem;
+
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &_navigation {
+    margin-right: auto;
+    height: 100%;
+    display: block;
+    width: 51.7rem;
+  }
+
+  &_list {
+    display: flex;
+    height: 100%;
+
+    li {
+      width: 15rem;
+      border-right: .1rem solid $nav-border;
+      border-left: .1rem solid $nav-border;
+      position: relative;
+      height: 100%;
+    }
+
+    li:last-of-type {
+      border-left: none;
+    }
+
+    a {
+      display: block;
+      @include absCenter;
+
+      &:hover {
+        color: #f7ca43;
+      }
+    }
+
+    i {
+      display: block;
+      padding-left: 40.5%;
+      padding-bottom: .5rem;
+    }
+    span {
+      display: block;
+      text-align: center;
+      white-space: nowrap;
+    }
+  }
+
+  &_users {
+    width: 17.6rem;
+    span {
+      color: $text-color;
+    }
+  }
+
+  &_login {
+    color: white !important;
+    padding-right: 1rem;
+    font-weight: 600;
+
+    &:hover {
+      color: #f7ca43 !important;
+    }
+  }
+
+  &_signup {
+    margin-left: 1rem;
+    padding: .7rem 1.2rem;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    color: #e9831e !important;
+    background-color: $primary-color;
+  }
+  
+}
+
+.intro {
+  width: 75%;
+  margin: 3rem auto 0;
+  color: #c4cfcf;
+  display: flex;
+  justify-content: space-between;
+
+  &_container {
+    width: 40%;
+  }
+  &_heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &_sheading {
+    margin-bottom: 2rem;
+  }
+
+  &_para {
+    font-weight: 400;
+    hyphens: auto;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  input:not([type="submit"]) {
+    display: inline-block;
+    border: none;
+    height: 4rem;
+    width: 25rem;
+    border-radius: .4rem;
+  }
+
+  input[type="submit"] {
+    float: right;
+    border: none;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    height: 4rem;
+    line-height: 4rem;
+    vertical-align: middle;
+    padding: 0 1rem;
+    border-radius: .4rem;
+    font-weight: 600;
+    color: #e9831e !important;
+    background-color: $primary-color;
+    cursor: pointer;
+  }
+
+  &_emailw {
+    border-bottom: .1rem solid rgba(black, .2);
+    padding-bottom: 3rem;
+  }
+
+  &_email {
+    background-color: #082948;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+    padding: 0 1rem;
+    color: whitesmoke;
+  }
+
+  &_email::placeholder {
+    font-size: 1.2rem;
+  }
+
+
+
+  &_searchDiv {
+
+    margin-top: 3rem;
+  
+    span {
+      padding-right: 2rem;
+    }
+  }
+
+  &_search {
+    background-color: #397aae;
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+    padding: 0 2.8rem 0 1rem;
+    color: whitesmoke;
+  }
+
+  &_search::placeholder {
+    color: whitesmoke;
+    font-size: 1.2rem;
+  }
+
+  
+}

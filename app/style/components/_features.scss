@@ -1,0 +1,38 @@
+.features {
+  width: 101.2rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    width: 29rem;
+    padding: 3rem 0;
+
+    i {
+      text-align: center;
+      width: 7rem;
+      height: 7rem;
+      display: inline-block;
+      padding: 2rem;
+      border-radius: 50%;
+      margin: 0 auto;
+      background-color: $primary-color;
+      margin-bottom: 1rem;
+      font-size: 3rem;
+    }
+
+    h3 {
+      margin: 0 auto;
+      padding-bottom: 2rem;
+      color: #082948;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
+}

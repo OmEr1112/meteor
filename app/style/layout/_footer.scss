@@ -1,0 +1,66 @@
+.fwrapper {
+  width: 101.2rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  color: $text-color;
+  
+}
+
+.left {
+  font-size: 1.4rem;
+
+  p span {
+    color: whitesmoke;
+  }
+
+  ul {
+    display: flex;
+    
+  }
+
+  li:not(:last-child) {
+    margin-right: 1rem;
+    padding-right: 1rem;
+    position: relative;
+  }
+
+  li:not(:last-child):after {
+    content:""; 
+    background: gray; 
+    position: absolute; 
+    bottom: .5rem; 
+    right: 0;
+    height: 50%; 
+    width: .1rem;
+  }
+
+  a {
+    color: $text-color;
+
+    &:hover {
+      color: #f7ca43;
+    }
+  }
+}
+
+.right {
+  cursor: pointer;
+  margin-right: 4rem;
+  color: $primary-color;
+  i {
+    padding-right: 1rem;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  p:first-of-type {
+    a {
+      color: #fec62d;
+    }
+  }
+}

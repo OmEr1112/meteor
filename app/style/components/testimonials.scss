@@ -1,0 +1,45 @@
+.testimonials {
+  width: 101.2rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+  @include clearfix;
+
+  h2 {
+    padding-bottom: 3rem;
+    text-align: center;
+    color: #1d2c4c;
+    font-style: italic;
+    
+    i {
+      padding-right: 2rem;
+    }
+  }
+}
+
+.testimonials>div {
+  width: 33.33333%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    padding-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+    color: #082948;
+  }
+
+  p {
+    width: 90%;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
